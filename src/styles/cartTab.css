@@ -8,20 +8,21 @@
     flex-direction: column;
     flex-wrap: nowrap;
     margin-left: 2em;
+    margin-top: 7rem;
 }
 
 hr{
     background-color: #67ffcc;
-    width: 13em;
+    width: 20em;
     height: 2px;
     border: none;
 }
-.cart-div{
+/* .cart-div{
 
 }
 .size{
 
-}
+} */
 .cart-div-row{
     display: grid;
     grid-template-columns: repeat(4, auto);

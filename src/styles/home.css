@@ -4,6 +4,7 @@
     width: min-content;
     gap: 3rem;
     float: right;
+    margin-top: 10rem;
 }
 @media (max-width: 900px) {
    .products{
