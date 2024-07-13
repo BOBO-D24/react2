@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/products.css'
 import { Link } from 'react-router-dom';
 import iconCart from '../assets/images/iconCart.png'
 import { useSelector, useDispatch } from 'react-redux';
@@ -17,17 +18,23 @@ const ProductCart = (props) => {
         }));
     }
   return (
-    <div className='bg-white p-5 rounded-xl shadow-sm'>
+    <div className='product-container'>
       <Link to={slug}>
-        <img src={image} alt='' className='w-full h-80 object-cover object-top drop-shadow-[0_88px_30px_#0007]' />
+        <img src={image} alt='' className='p-img' />
       </Link>
       <h3 className='text-2xl py-3 text-center font-medium'>{name}</h3>
-      <div className='flex justify-between items-center'>
-        <p>
-            $<span className='text-2xl font-medium'>{price}</span>
+      <div className='circles'>
+      <div className='circle one'></div>
+      <div className='circle two'></div>
+      <div className='circle three'></div>
+      </div>
+      <div className='product-card-footer'>
+      
+        <p className='price'>
+            $<span className=''>{price}</span>
         </p>
-        <button className='bg-gray-300 p-2 rounded-md text-sm hover:bg-gray-400 flex gap-2' onClick={handleAddToCart}>
-        <img src={iconCart} alt='' className='w-5' />
+        <button className='add-btn' onClick={handleAddToCart}>
+        {/* <img src={iconCart} alt='' className='add-btn-img' /> */}
         Add To Cart</button>
       </div>
     </div>
